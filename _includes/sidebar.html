@@ -1,0 +1,24 @@
+<div id="sidebar">
+    <div class="inner">
+        {% include search-form.html %}
+        <nav id="menu">
+            <header class="major">
+                <h2>Menu</h2>
+            </header>
+                
+            <ul>
+                {% for item in site.data.nav %}
+                    <li>
+                        <a href="{{ item.link }}" title="{{ item.title }}">
+                            {{ item.title }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+
+        {% include contactos.html %}
+
+        {% include footer.html %}
+    </div>
+</div>

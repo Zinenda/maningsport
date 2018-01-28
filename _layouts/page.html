@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+{% include banner.html %}
+
+{% for post in paginator.posts %}
+    <section>
+        {% include mojor-header.html %}
+        {% include grid-loop.html %}
+    </section>
+{% endfor %}
+
+{% include pagination.html %}

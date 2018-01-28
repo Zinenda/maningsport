@@ -1,0 +1,9 @@
+<header id="header">
+    <a href="/" class="logo"><strong>{{ site.title }}</strong></a>
+    
+    <ul class="icons">
+        {% for item in site.data.social %}
+            {% include social.html %}
+        {% endfor %}
+    </ul>
+</header>
